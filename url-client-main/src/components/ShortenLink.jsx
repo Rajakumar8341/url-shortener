@@ -5,7 +5,7 @@ function ShortenLink(props) {
   const { data } = props;
 
   const copyToClipboard = (value) => {
-    let copyText = "https://url-api-ashy.vercel.app/" + value;
+    let copyText = "https://url-shortener-zeta-fawn.vercel.app/" + value;
     let isCopy = copy(copyText);
     if (isCopy) {
       alert(`Short URL Copied  ${copyText}`);
@@ -49,7 +49,7 @@ function ShortenLink(props) {
                   <td className="flex items-center justify-between gap-2 text-wrap border-[1px] border-gray-800 p-2 text-center text-red-600">
                     <a
                       href={
-                        "https://url-api-ashy.vercel.app/" + data.shorturlid
+                        "https://url-shortener-zeta-fawn.vercel.app/" + data.shorturlid
                       }
                       target="_blank"
                     >

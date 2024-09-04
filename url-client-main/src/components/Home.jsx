@@ -9,7 +9,7 @@ function Home() {
   const [refresh, setRefresh] = useState(false);
   const [message, setMessage] = useState("");
 
-  const url = "https://url-api-ashy.vercel.app";
+  const url = "https://url-shortener-zeta-fawn.vercel.app/";
 
   function validateUrl(url) {
     // Convert URL to lowercase to ensure case-insensitive comparison
@@ -36,7 +36,7 @@ function Home() {
       const data = await res.json();
       setUrlData(data);
       const latestValue = data[data.length - 1];
-      const link = `https://url-api-ashy.vercel.app/${latestValue.shorturlid}`;
+      const link = `https://url-shortener-zeta-fawn.vercel.app/${latestValue.shorturlid}`;
       setMessage(link);
     }
 

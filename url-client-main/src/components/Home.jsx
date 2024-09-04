@@ -9,7 +9,7 @@ function Home() {
   const [refresh, setRefresh] = useState(false);
   const [message, setMessage] = useState("");
 
-  const url = "https://url-shortener-zeta-fawn.vercel.app/";
+  const url = "https://url-shortener-zeta-fawn.vercel.app";
 
   function validateUrl(url) {
     // Convert URL to lowercase to ensure case-insensitive comparison
